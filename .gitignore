@@ -1,0 +1,45 @@
+# =============================================================================
+# .gitignore - Simulador de Misiones Artemis (UTN ISI)
+# =============================================================================
+
+# Archivos objeto e intermedios de compilacion (GCC / Clang / MSVC)
+*.o
+*.obj
+*.lo
+*.out
+*.def
+*.exp
+*.lib
+*.a
+*.so
+*.dll
+
+# Archivos de depuracion y enlazado incremental de Windows / Visual Studio
+*.pdb
+*.ilk
+*.idb
+*.ipdb
+*.iobj
+*.pch
+*.VC.db
+*.VC.opendb
+
+# Ejecutables temporales generados durante pruebas locales
+*.exe
+# Excepcion: se conserva el ejecutable de demostracion de la interfaz para el equipo
+!demo_interfaz.exe
+
+# Configuraciones locales de editores e IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.cbp
+*.layout
+*.depend
+
+# Archivos temporales del sistema operativo (Windows / macOS / Linux)
+Thumbs.db
+Desktop.ini
+.DS_Store
