@@ -29,8 +29,7 @@
 # Excepcion: se conserva el ejecutable de demostracion de la interfaz para el equipo
 !demo_interfaz.exe
 
-# Configuraciones locales de editores e IDEs
-.vscode/
+# Configuraciones locales de editores e IDEs (se conserva .vscode para configuracion de tareas del equipo)
 .idea/
 *.swp
 *.swo

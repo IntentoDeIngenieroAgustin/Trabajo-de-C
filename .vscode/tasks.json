@@ -1,0 +1,61 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compilar ARTEMIS",
+      "type": "shell",
+      "command": "cmd.exe",
+      "args": ["/c", "compilar.bat"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "Compila el simulador ARTEMIS detectando automaticamente GCC o MSVC."
+    },
+    {
+      "label": "Compilar ARTEMIS (GCC / MSYS2)",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-Iinclude",
+        "src/main.c",
+        "src/interfaz.c",
+        "src/simulador.c",
+        "src/fisica.c",
+        "src/validaciones.c",
+        "src/reportes.c",
+        "-lm",
+        "-o",
+        "${workspaceFolder}/bin/artemis.exe"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": "build",
+      "detail": "Compilacion directa con GCC para entornos con MinGW / MSYS2."
+    },
+    {
+      "label": "Ejecutar Autoprueba (-t)",
+      "type": "shell",
+      "command": "${workspaceFolder}/bin/artemis.exe",
+      "args": ["-t"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "dependsOn": "Compilar ARTEMIS",
+      "problemMatcher": [],
+      "group": "test",
+      "detail": "Ejecuta las 12 verificaciones automaticas del simulador."
+    }
+  ]
+}

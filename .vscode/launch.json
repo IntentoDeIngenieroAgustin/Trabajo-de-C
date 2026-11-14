@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "configurations": [
+    {
+      "name": "Simulador ARTEMIS: Ejecutar",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}\\bin\\artemis.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "console": "integratedTerminal",
+      "preLaunchTask": "Compilar ARTEMIS"
+    },
+    {
+      "name": "Simulador ARTEMIS: Autoprueba (-t)",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}\\bin\\artemis.exe",
+      "args": ["-t"],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "console": "integratedTerminal",
+      "preLaunchTask": "Compilar ARTEMIS"
+    }
+  ]
+}
