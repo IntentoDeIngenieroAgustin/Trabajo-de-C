@@ -43,3 +43,8 @@
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+# Binarios del proyecto y reportes generados
+bin/*
+!bin/.gitkeep
+reporte_mision_artemis.txt
