@@ -8,11 +8,11 @@
 
 ## a) Integrantes y comisión
 
-| Integrante | Legajo | Rol principal en el proyecto |
-|---|---|---|
-| Rocco Macías | 30644 | _completar_ |
-| _Nombre Apellido_ | _legajo_ | _completar_ |
-| _Nombre Apellido_ | _legajo_ | _completar_ |
+| Integrante | Legajo 
+|---|---|
+| Rocco Macías | 30644 |
+| _Nombre Apellido_ | _legajo_ |
+| _Nombre Apellido_ | _legajo_ 
 
 **Comisión:** 1.1
 
